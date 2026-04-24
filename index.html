@@ -22,7 +22,7 @@
               bg: '#f5f5f2'
             },
             fontFamily: {
-              sans: ['"Noto Sans JP"', '"Hiragino Kaku Gothic ProN"', '"Yu Gothic"', 'Meiryo', 'sans-serif']
+              sans: ['"M PLUS Rounded 1c"', '"Hiragino Maru Gothic ProN"', '"Yu Gothic UI"', 'Meiryo', 'sans-serif']
             },
             boxShadow: {
               soft: '0 8px 24px rgba(80, 120, 160, 0.12)'
@@ -47,7 +47,7 @@
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet" />
   </head>
 
   <body class="bg-bg text-text">
@@ -67,10 +67,10 @@
         <div class="h-20 flex items-center justify-between">
           <a href="#home" class="flex items-center gap-3" aria-label="ふくみーケア ホーム">
             <img src="./fukumi-logo.png" alt="ふくみーケアロゴ" class="w-11 h-11 rounded-full object-cover" />
-            <span class="text-[28px] font-extrabold tracking-wide text-sky">ふくみーケア</span>
+            <span class="text-[21px] font-extrabold tracking-wide text-sky">ふくみーケア</span>
           </a>
 
-          <nav class="hidden md:flex items-center gap-11 text-[31px] font-bold" aria-label="メインメニュー">
+          <nav class="hidden md:flex items-center gap-11 text-[27px] font-bold" aria-label="メインメニュー">
             <a href="#home" class="hover:text-sky transition-colors">ホーム</a>
             <a href="#service" class="hover:text-sky transition-colors">サービス</a>
             <a href="#price" class="hover:text-sky transition-colors">料金</a>
@@ -91,15 +91,22 @@
     <main id="main">
       <section id="home">
         <div class="max-w-[1120px] mx-auto px-4 sm:px-6 py-6 sm:py-8">
-          <div class="bg-white rounded-2xl overflow-hidden shadow-soft grid lg:grid-cols-[1.05fr_1fr]">
-            <div class="p-6 sm:p-10 lg:p-12 animate-fadeInUp">
-              <p class="text-[42px] sm:text-[56px] lg:text-[68px] font-black leading-[1.22] tracking-tight">
+          <div
+            class="relative rounded-2xl overflow-hidden shadow-soft min-h-[420px] sm:min-h-[520px] lg:min-h-[620px]"
+            role="img"
+            aria-label="笑顔のご高齢の方と介護士"
+          >
+            <img src="./fukumi-hero.png" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-white/48 sm:bg-white/42"></div>
+
+            <div class="relative z-10 p-6 sm:p-10 lg:p-12 max-w-4xl animate-fadeInUp">
+              <p class="text-[36px] sm:text-[44px] lg:text-[60px] font-black leading-[1.22] tracking-tight">
                 <span class="text-sky">大切な人を、</span><br />
                 <span class="text-sky">ずっと</span><span class="text-mint">ご自宅で。</span>
               </p>
 
-              <h1 class="mt-4 text-[42px] sm:text-[50px] font-extrabold">ふくみーケアの訪問介護</h1>
-              <p class="mt-4 text-[29px] sm:text-[31px] leading-[1.6] text-slate-700">
+              <h1 class="mt-4 text-[36px] sm:text-[44px] font-extrabold">ふくみーケアの訪問介護</h1>
+              <p class="mt-4 text-[24px] sm:text-[26px] leading-[1.6] text-slate-700">
                 身体介護・生活援助・訪問看護・ケアプラン作成まで、<br class="hidden sm:block" />
                 地域に寄り添うやさしいケアをご提供します。
               </p>
@@ -107,23 +114,15 @@
               <div class="mt-7 flex flex-wrap gap-3 sm:gap-4">
                 <a
                   href="#service"
-                  class="inline-flex items-center gap-2 rounded-full bg-sky text-white text-[30px] font-bold px-8 py-3 shadow-soft hover:scale-[1.02] transition"
+                  class="inline-flex items-center gap-2 rounded-full bg-sky text-white text-[24px] font-bold px-7 py-3 shadow-soft hover:scale-[1.02] transition"
                   >☎ サービスを見る</a
                 >
                 <a
                   href="#contact"
-                  class="inline-flex items-center gap-2 rounded-full border-2 border-mint text-text text-[30px] font-bold px-8 py-3 bg-white hover:bg-mint/10 hover:scale-[1.02] transition"
+                  class="inline-flex items-center gap-2 rounded-full border-2 border-mint text-text text-[24px] font-bold px-7 py-3 bg-white/90 hover:bg-mint/15 hover:scale-[1.02] transition"
                   >✉ ご相談・お問い合わせ</a
                 >
               </div>
-            </div>
-
-            <div class="min-h-[340px] sm:min-h-[460px] lg:min-h-full">
-              <img
-                src="./fukumi-hero.png"
-                alt="笑顔のご高齢の方と介護士"
-                class="w-full h-full object-cover"
-              />
             </div>
           </div>
         </div>
@@ -131,14 +130,14 @@
 
       <section id="service" class="py-8 sm:py-10">
         <div class="max-w-[1120px] mx-auto px-4 sm:px-6">
-          <h2 class="text-center text-[34px] sm:text-[52px] font-extrabold">❧ サービス紹介 ❧</h2>
+          <h2 class="text-center text-[26px] sm:text-[46px] font-extrabold">❧ サービス紹介 ❧</h2>
 
           <div class="mt-6 grid sm:grid-cols-2 xl:grid-cols-4 gap-4">
             <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden p-2">
               <img src="./service-bodycare.png" alt="身体介護" class="w-full h-44 object-cover rounded-xl" />
               <div class="px-3 pt-3 pb-4 text-center">
-                <h3 class="text-[43px] font-extrabold text-sky">身体介護</h3>
-                <p class="text-[30px] mt-1 leading-[1.65]">食事・入浴・排せつなど、<br />日常生活を丁寧にサポート。</p>
+                <h3 class="text-[37px] font-extrabold text-sky">身体介護</h3>
+                <p class="text-[26px] mt-1 leading-[1.65]">食事・入浴・排せつなど、<br />日常生活を丁寧にサポート。</p>
                 <div class="w-12 h-1 rounded mx-auto mt-3 bg-sky/80"></div>
               </div>
             </article>
@@ -146,8 +145,8 @@
             <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden p-2">
               <img src="./service-lifecare.png" alt="生活援助" class="w-full h-44 object-cover rounded-xl" />
               <div class="px-3 pt-3 pb-4 text-center">
-                <h3 class="text-[43px] font-extrabold text-mint">生活援助</h3>
-                <p class="text-[30px] mt-1 leading-[1.65]">掃除・洗濯・買い物・調理など、<br />ご自宅での暮らしを支えます。</p>
+                <h3 class="text-[37px] font-extrabold text-mint">生活援助</h3>
+                <p class="text-[26px] mt-1 leading-[1.65]">掃除・洗濯・買い物・調理など、<br />ご自宅での暮らしを支えます。</p>
                 <div class="w-12 h-1 rounded mx-auto mt-3 bg-mint/80"></div>
               </div>
             </article>
@@ -155,8 +154,8 @@
             <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden p-2">
               <img src="./service-dementia.png" alt="認知症ケア" class="w-full h-44 object-cover rounded-xl" />
               <div class="px-3 pt-3 pb-4 text-center">
-                <h3 class="text-[43px] font-extrabold text-pink">認知症ケア</h3>
-                <p class="text-[30px] mt-1 leading-[1.65]">ご本人とご家族に寄り添い、<br />安心できる毎日をサポート。</p>
+                <h3 class="text-[37px] font-extrabold text-pink">認知症ケア</h3>
+                <p class="text-[26px] mt-1 leading-[1.65]">ご本人とご家族に寄り添い、<br />安心できる毎日をサポート。</p>
                 <div class="w-12 h-1 rounded mx-auto mt-3 bg-pink/80"></div>
               </div>
             </article>
@@ -164,8 +163,8 @@
             <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden p-2">
               <img src="./service-24h.png" alt="24時間対応" class="w-full h-44 object-cover rounded-xl" />
               <div class="px-3 pt-3 pb-4 text-center">
-                <h3 class="text-[43px] font-extrabold text-purple">24時間対応</h3>
-                <p class="text-[30px] mt-1 leading-[1.65]">急なご相談にも対応できる、<br />安心のサポート体制。</p>
+                <h3 class="text-[37px] font-extrabold text-purple">24時間対応</h3>
+                <p class="text-[26px] mt-1 leading-[1.65]">急なご相談にも対応できる、<br />安心のサポート体制。</p>
                 <div class="w-12 h-1 rounded mx-auto mt-3 bg-purple/80"></div>
               </div>
             </article>
@@ -176,27 +175,27 @@
       <section class="py-2 sm:py-4">
         <div class="max-w-[1120px] mx-auto px-4 sm:px-6">
           <div class="bg-[#edf2ea] rounded-2xl py-8 px-5 sm:px-7">
-            <h2 class="text-center text-[34px] sm:text-[52px] font-extrabold">❧ ふくみーケアが選ばれる理由 ❧</h2>
+            <h2 class="text-center text-[26px] sm:text-[46px] font-extrabold">❧ ふくみーケアが選ばれる理由 ❧</h2>
             <div class="mt-6 grid md:grid-cols-3 gap-6">
               <article class="flex gap-4 items-start">
                 <div class="w-20 h-20 rounded-full border-2 border-mint grid place-items-center text-3xl text-mint">🏠</div>
                 <div>
-                  <h3 class="text-[42px] font-bold text-green-700">地域密着</h3>
-                  <p class="text-[30px] mt-1 leading-[1.65]">地域の医療・福祉との<br />連携を大切にしています。</p>
+                  <h3 class="text-[36px] font-bold text-green-700">地域密着</h3>
+                  <p class="text-[26px] mt-1 leading-[1.65]">地域の医療・福祉との<br />連携を大切にしています。</p>
                 </div>
               </article>
               <article class="flex gap-4 items-start">
                 <div class="w-20 h-20 rounded-full border-2 border-mint grid place-items-center text-3xl text-mint">🧑‍⚕️</div>
                 <div>
-                  <h3 class="text-[42px] font-bold text-green-700">経験豊富なスタッフ</h3>
-                  <p class="text-[30px] mt-1 leading-[1.65]">資格を持つスタッフが<br />心を込めて対応します。</p>
+                  <h3 class="text-[36px] font-bold text-green-700">経験豊富なスタッフ</h3>
+                  <p class="text-[26px] mt-1 leading-[1.65]">資格を持つスタッフが<br />心を込めて対応します。</p>
                 </div>
               </article>
               <article class="flex gap-4 items-start">
                 <div class="w-20 h-20 rounded-full border-2 border-mint grid place-items-center text-3xl text-mint">24</div>
                 <div>
-                  <h3 class="text-[42px] font-bold text-green-700">安心の24時間体制</h3>
-                  <p class="text-[30px] mt-1 leading-[1.65]">夜間や緊急時も、迅速に<br />ご相談いただけます。</p>
+                  <h3 class="text-[36px] font-bold text-green-700">安心の24時間体制</h3>
+                  <p class="text-[26px] mt-1 leading-[1.65]">夜間や緊急時も、迅速に<br />ご相談いただけます。</p>
                 </div>
               </article>
             </div>
@@ -206,11 +205,11 @@
 
       <section id="price" class="py-8 sm:py-10">
         <div class="max-w-[980px] mx-auto px-4 sm:px-6">
-          <h2 class="text-center text-[58px] font-extrabold">料金の目安</h2>
+          <h2 class="text-center text-[44px] font-extrabold">料金の目安</h2>
           <div class="w-12 h-1 rounded mx-auto mt-2 bg-sky"></div>
 
           <div class="mt-5 rounded-xl overflow-hidden border border-slate-200 bg-white">
-            <table class="w-full text-[30px]">
+            <table class="w-full text-[26px]">
               <thead>
                 <tr class="bg-sky text-white">
                   <th scope="col" class="py-3 px-3 border-r border-white/40">サービス</th>
@@ -226,20 +225,20 @@
               </tbody>
             </table>
           </div>
-          <p class="mt-4 text-[28px]">※介護保険適用の有無や内容により異なります。詳しくはお問い合わせください。</p>
+          <p class="mt-4 text-[21px]">※介護保険適用の有無や内容により異なります。詳しくはお問い合わせください。</p>
         </div>
       </section>
 
       <section class="pb-10">
         <div class="max-w-[1120px] mx-auto px-4 sm:px-6">
-          <h2 class="text-center text-[52px] font-extrabold">❧ お客様の声 ❧</h2>
+          <h2 class="text-center text-[46px] font-extrabold">❧ お客様の声 ❧</h2>
           <div class="mt-6 grid md:grid-cols-3 gap-4">
             <article class="bg-white border border-slate-200 rounded-2xl p-4">
               <div class="flex gap-4 items-center">
                 <img src="./voice-t.png" alt="鹿児島市・T様" class="w-24 h-24 rounded-full object-cover" />
                 <div>
-                  <h3 class="text-[40px] text-sky font-bold">鹿児島市・T様</h3>
-                  <p class="text-[30px] mt-1 leading-[1.65]">母が自宅で穏やかに<br />過ごせるようになり、<br />とても安心しています。</p>
+                  <h3 class="text-[26px] text-sky font-bold">鹿児島市・T様</h3>
+                  <p class="text-[26px] mt-1 leading-[1.65]">母が自宅で穏やかに<br />過ごせるようになり、<br />とても安心しています。</p>
                 </div>
               </div>
             </article>
@@ -247,8 +246,8 @@
               <div class="flex gap-4 items-center">
                 <img src="./voice-k.png" alt="給良市・K様" class="w-24 h-24 rounded-full object-cover" />
                 <div>
-                  <h3 class="text-[40px] text-mint font-bold">給良市・K様</h3>
-                  <p class="text-[30px] mt-1 leading-[1.65]">スタッフの皆さんが<br />丁寧で、家族にもやさしく<br />寄り添ってくれます。</p>
+                  <h3 class="text-[26px] text-mint font-bold">給良市・K様</h3>
+                  <p class="text-[26px] mt-1 leading-[1.65]">スタッフの皆さんが<br />丁寧で、家族にもやさしく<br />寄り添ってくれます。</p>
                 </div>
               </div>
             </article>
@@ -256,8 +255,8 @@
               <div class="flex gap-4 items-center">
                 <img src="./voice-n.png" alt="霧島市・N様" class="w-24 h-24 rounded-full object-cover" />
                 <div>
-                  <h3 class="text-[40px] text-pink font-bold">霧島市・N様</h3>
-                  <p class="text-[30px] mt-1 leading-[1.65]">急な相談にも迅速に<br />対応していただき、<br />本当に助かっています。</p>
+                  <h3 class="text-[26px] text-pink font-bold">霧島市・N様</h3>
+                  <p class="text-[26px] mt-1 leading-[1.65]">急な相談にも迅速に<br />対応していただき、<br />本当に助かっています。</p>
                 </div>
               </div>
             </article>
@@ -271,14 +270,14 @@
         <section>
           <div class="flex items-center gap-3">
             <img src="./fukumi-logo.png" alt="ふくみーケアロゴ" class="w-11 h-11 rounded-full object-cover" />
-            <p class="text-[54px] font-extrabold text-sky">ふくみーケア</p>
+            <p class="text-[48px] font-extrabold text-sky">ふくみーケア</p>
           </div>
-          <p class="mt-3 text-[30px] leading-[1.65]">地域に寄り添う、<br />やさしい在宅ケアを。</p>
+          <p class="mt-3 text-[26px] leading-[1.65]">地域に寄り添う、<br />やさしい在宅ケアを。</p>
         </section>
 
         <section>
-          <h2 class="text-[42px] font-bold">メニュー</h2>
-          <ul class="mt-4 space-y-2 text-[30px]">
+          <h2 class="text-[36px] font-bold">メニュー</h2>
+          <ul class="mt-4 space-y-2 text-[26px]">
             <li><a href="#home" class="hover:text-sky transition-colors">ホーム</a></li>
             <li><a href="#service" class="hover:text-sky transition-colors">サービス</a></li>
             <li><a href="#price" class="hover:text-sky transition-colors">料金</a></li>
@@ -289,8 +288,8 @@
 
         <section id="contact">
           <!-- ここを編集すれば会社情報が変わります（会社名・住所・電話番号・受付時間） -->
-          <h2 class="text-[42px] font-bold">お問い合わせ</h2>
-          <address class="not-italic mt-4 space-y-2 text-[30px] leading-[1.65]">
+          <h2 class="text-[36px] font-bold">お問い合わせ</h2>
+          <address class="not-italic mt-4 space-y-2 text-[26px] leading-[1.65]">
             <p>〒890-0000<br />鹿児島県鹿児島市〇〇町 1-2-3</p>
             <p>TEL <a href="tel:0991234567" class="text-sky font-bold hover:underline">099-123-4567</a></p>
             <p>受付時間 9:00〜18:00</p>
@@ -298,7 +297,7 @@
         </section>
       </div>
 
-      <div class="bg-sky text-white text-center py-3 text-[24px]">© 2026 ふくみーケア All Rights Reserved.</div>
+      <div class="bg-sky text-white text-center py-3 text-[21px]">© 2026 ふくみーケア All Rights Reserved.</div>
 
       <a
         href="#home"
