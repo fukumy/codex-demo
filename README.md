@@ -1,2 +1,2 @@
 # codex-demo
-codex用のデモ
+codexのデモ用
